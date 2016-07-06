@@ -30,7 +30,8 @@ class CommentsList extends Component {
         }
 
         const listItems = comments.map((comment) => <li key={comment.id}><Comment comment={comment}/></li>)
-return (
+
+        return (
             <div>
                 <a href="#" onClick={this.toggleOpen}> Hide comments </a>
                 <ul>
